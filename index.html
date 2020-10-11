@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='./index.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Indie+Flower&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <title>Invitation</title>
+    
+</head>
+<body>
+    <main>
+        <div class="background-blur"></div>
+        <div class="background">
+            <div class="image"></div>
+            <svg class="border">
+                <rect></rect>
+            </svg>
+            <section STYLE="color:white;">
+                <div class="intro">
+                   <p style="font-family: 'Shadows Into Light', cursive;">TOGETHER WITH THEIR FAMILIES</p>
+                </div>
+                <div class="names">
+                    <p class='couple-name'>
+                        Vetri Selvan M
+                        <br>
+                        &
+                        <br>
+                        Kalpana N.K
+                    </p>
+                </div>
+                <div class="venue">
+                    <p>
+                        <span style="font-family: 'Shadows Into Light', cursive;">REQUEST THE PLEASURE OF YOUR COMPANY AT CELEBRATION OF THEIR WEDDING</span><br><br>
+                        Reception : <br>
+                        <b>Oct &#9825; 28 &#9825; 7:00 PM</b><br>
+
+                        <br>Marriage :<br>
+                        <b>Oct &#9825; 29 &#9825; 7:30 - 9:00 AM</b><br>
+
+                        <br>At<br>
+                        <b>Hotel Subha Grand,cuddalore-607003.</b>
+                    </p>
+                </div>
+                <div>
+                    <p id="demo" class="timer"></p>
+                    <script>
+                        var countDownDate = new Date("Oct 29, 2020 07:30:00").getTime();
+                        var x = setInterval(function() {
+                        var now = new Date().getTime();
+                        var distance = countDownDate - now;
+                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                        document.getElementById("demo").innerHTML = days + " Days : " + hours + " Hrs : "
+                          + minutes + " Min : " + seconds +" Sec ";
+                        if (distance < 0) {
+                            clearInterval(x);
+                            document.getElementById("demo").innerHTML = "EXPIRED";
+                          }
+                        }, 1000);
+                        </script>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
