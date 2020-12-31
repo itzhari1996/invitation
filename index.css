@@ -84,7 +84,7 @@ p {
     height: 120vw;
     transform-style: preserve-3d;
     transform: rotateX(65deg);
-    transition: all 1s ease;
+    transition: all 2s ease;
   }
   .open .card {
     transform: rotateX(0deg);
@@ -99,7 +99,7 @@ p {
     height: 100%;
     display: grid;
     place-items: center;
-    transition: all 1s ease;
+    transition: all 2s ease;
     backface-visibility: visible;
     transform-origin: left;
     transform-style: preserve-3D;
@@ -107,7 +107,7 @@ p {
   }
   .card__panel--front {
     backface-visibility: hidden;
-    background-image: url(./—Pngtree—chinese\ style\ wedding\ invitation\ card_953441.jpg);
+    background-image: url(./—Pngtree—chinese\ style\ wedding\ invitation\ card_953441-min.jpg);
     background-size: cover;
     font-size:1.4rem;
     color: #fff;
