@@ -5,47 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href='./index.css'>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Indie+Flower&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Orbitron&family=Redressed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <title>Invitation</title>
     
 </head>
 <body>
     <main>
-        <div class="background-blur"></div>
-        <div class="background">
-            <div class="image"></div>
-            <svg class="border">
-                <rect></rect>
-            </svg>
-            <section STYLE="color:white;">
-                <div class="intro">
-                   <p style="font-family: 'Shadows Into Light', cursive;">TOGETHER WITH THEIR FAMILIES</p>
-                </div>
-                <div class="names">
-                    <p class='couple-name'>
-                        Vetri Selvan M
-                        <br>
-                        &
-                        <br>
-                        Kalpana N.K
-                    </p>
-                </div>
-                <div class="venue">
-                    <p>
-                        <span style="font-family: 'Shadows Into Light', cursive;">REQUEST THE PLEASURE OF YOUR COMPANY AT CELEBRATION OF THEIR WEDDING</span><br><br>
-                        Reception : <br>
-                        <b>Oct &#9825; 28 &#9825; 7:00 PM</b><br>
+        <p style="color: #D21518;">Click card to open</p>
 
-                        <br>Marriage :<br>
-                        <b>Oct &#9825; 29 &#9825; 7:30 - 9:00 AM</b><br>
-
-                        <br>At<br>
-                        <b>Hotel Subha Grand,cuddalore-607003.</b>
-                    </p>
+        <div class="card__container js-card-opener">
+            <div class="card">
+                <div class="card__panel card__panel--front">
+                <p style="font-family: 'Satisfy', cursive;">Ramya's Invitation</p>
                 </div>
-                <div>
-                    <p id="demo" class="timer"></p>
-                    <script>
-                        var countDownDate = new Date("Oct 29, 2020 07:30:00").getTime();
+                <div class="card__panel card__panel--inside-left">
+                </div>
+                <div class="card__panel card__panel--inside-right">
+                    <div class="work-area">
+                        
+                        <p class="support-text">TOGETHER WITH THEIR FAMILIES</p>
+                        <span class='couple-name'>K. Parthiban
+                            <br/>
+                            &
+                            <br/>
+                            D. Ramya
+                        </span>
+
+                        <p>
+                            <div style="width: 80%;margin: auto;">
+                                <span class="support-text">REQUEST THE PLEASURE OF YOUR COMPANY AT CELEBRATION OF THEIR WEDDING</span><br><br>
+                            </div>
+                            <div class="main-text">
+                                Reception <br>
+                                <b>Jan &#9825; 31 &#9825; @ 6:00 PM</b><br>
+        
+                                <br>Marriage<br>
+                                <b>Feb &#9825; 1 &#9825; @ 6:00 - 7:30 AM</b><br>
+        
+                                <br>At<br>
+                                <b>Kurinji Mahal, kallakurichi</b><br/>
+                                <em>Near AKT school</em>
+                            </div>
+                        </p><br/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p id="demo" class="timer"></p>
+    </main>
+    <script>
+        const openBtn = document.querySelector(".js-card-opener");
+        openBtn.onclick = function () {
+        document.body.classList.toggle("open");
+        };
+
+        var countDownDate = new Date(2021,0,31,18,0,0,0).getTime();
                         var x = setInterval(function() {
                         var now = new Date().getTime();
                         var distance = countDownDate - now;
@@ -61,9 +77,6 @@
                           }
                         }, 1000);
                         </script>
-                </div>
-            </section>
-        </div>
-    </main>
+    </script>
 </body>
 </html>

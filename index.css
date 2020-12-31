@@ -1,153 +1,136 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.background-blur{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-image: url(https://images.pexels.com/photos/948185/pexels-photo-948185.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    -webkit-filter: blur(75px);
-    filter: blur(75px);
-}
-
-.background {
-    position: absolute;
-    width: 40vw;
-    height: 90vh;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    -webkit-box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
-    box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
-}
-
-.background .image {
-    height: 100%;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url(https://images.pexels.com/photos/1721097/pexels-photo-1721097.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/1721097/pexels-photo-1721097.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.background .border {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    padding: 1.5rem;
-    top: 0;
-    left: 0;
-}
-
-.background svg rect {
-    width: 100%;
-    height: 100%;
-    fill: none;
-    stroke-width: 0.5rem;
-    stroke: rgba(255, 255, 255, 0.7);
-}
-section {
-    position: absolute;
-    width: 40vw;
-    height: 90vh;
-    padding: 3rem;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+body {
     text-align: center;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 10% 40% 40% 10%;
-    grid-template-rows: 5% 35% 50% 10%;
-    -webkit-box-align: center;
-    align-items: center;
-}
-p {
-    font-size: 1.2rem;
-    font-family: 'Courier Prime', monospace;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
+    background: whitesmoke;
+    color: white;
+  }
+  .card__container {
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    perspective: 1400px;
+    transition: all 0.2s ease;
+  }
 
-.couple-name{
+  .couple-name{
     line-height: 1;
-    font-size: 3rem;
+    font-size: 1.9rem;
     font-family:'Dancing Script', cursive;
     font-style: italic;
+    color:white;
 }
 
 .timer{
-    color:whitesmoke;
-    font-family:'Indie Flower', cursive;
-    font-size: 2rem;
-    border: 2px solid white;
-    box-shadow:0 4px 8px 0 rgba(255, 255, 255, 0.5), 0 6px 20px 0 rgba(255, 255, 255, 0.5);
-
+    width: 90%;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    color: #D21518;
+    font-size: 1.5rem;
 }
 
-@media screen and (max-width: 600px) {
-    .background {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        -webkit-box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
-        box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
+p {
+    /* font-family: 'Courier Prime', monospace; */
+    font-family: 'Redressed', cursive;
+}
+
+.support-text{
+    padding: 5%;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 0.7rem;
+}
+
+.work-area{
+    width: 85%;
+    width: auto;
+}
+
+.main-text{
+    font-size: 0.8rem;
+    font-family: 'Redressed', cursive;
+}
+ 
+  @media (min-width: 768px) {
+    .open .card__container {
+      transform: translate(0%, -50%);
     }
 
-    .background .border {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        padding: 2rem;
-        top: 0;
-        left: 0;    
+    .couple-name{
+        line-height: 1;
+        font-size: 2.5rem;
+        font-family:'Dancing Script', cursive;
+        font-style: italic;
+        color:white;
     }
 
-    .background svg rect {
-        width: 100%;
-        height: 100%;
-        fill: none;
-        stroke-width: 0.5rem;
-        stroke: rgba(255, 255, 255, 0.7);
+    .timer{
+        width: 95%;
+        font-size: 1.5rem;
     }
-    html {
-        font-size: 65%;
+    .main-text{
+        font-size: 1rem;
     }
 
-    section {
-        position: absolute;
-        width: 85vw;
-        height: 90vh;
-        padding: 4rem;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        display: -ms-grid;
-        display: grid;
-        -ms-grid-rows: 10% 40% 40% 10%;
-        grid-template-rows: 5% 35% 50% 10%;
-        -webkit-box-align: center;
-        align-items: center;
+    .support-text{
+        font-size: 1rem;
     }
-
-    
-
   }
-  
+  .card {
+    max-width: 400px;
+    max-height: 600px;
+    width: 80vw;
+    height: 120vw;
+    transform-style: preserve-3d;
+    transform: rotateX(65deg);
+    transition: all 1s ease;
+  }
+  .open .card {
+    transform: rotateX(0deg);
+  }
+  .card__panel {
+    border: 1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    transition: all 1s ease;
+    backface-visibility: visible;
+    transform-origin: left;
+    transform-style: preserve-3D;
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+  .card__panel--front {
+    backface-visibility: hidden;
+    background-image: url(./—Pngtree—chinese\ style\ wedding\ invitation\ card_953441.jpg);
+    background-size: cover;
+    font-size:1.4rem;
+    color: #fff;
+    z-index: 1;
+  }
+  .open .card__panel--front {
+    transform: rotate3d(0, 1, 0, -170deg);
+  }
+  .card__panel--inside-left {
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image: url(./5b98de108d2db.png);
+    background-size: cover;
+    z-index: 0;
+  }
+  .open .card__panel--inside-left {
+    transform: rotate3d(0, 1, 0, -170deg);
+  }
+  .card__panel--inside-right {
+    border-left: none;
+    background: #fff;
+    background-image: url(./5b98de108d2db.png);
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: -1;
+  }
