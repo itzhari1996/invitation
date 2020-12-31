@@ -10,7 +10,7 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
     perspective: 1400px;
-    transition: all 0.2s ease;
+    transition: all 1s ease;
   }
 
   .couple-name{
