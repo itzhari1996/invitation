@@ -107,7 +107,7 @@ p {
   }
   .card__panel--front {
     backface-visibility: hidden;
-    background-image: url(./—Pngtree—chinese\ style\ wedding\ invitation\ card_953441-min.jpg);
+    background-image: url(./front.jpg);
     background-size: cover;
     font-size:1.4rem;
     color: #fff;
@@ -119,7 +119,7 @@ p {
   .card__panel--inside-left {
     background: #fff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-image: url(./5b98de108d2db.png);
+    background-image: url(./back.jpg);
     background-size: cover;
     z-index: 0;
   }
@@ -129,7 +129,7 @@ p {
   .card__panel--inside-right {
     border-left: none;
     background: #fff;
-    background-image: url(./5b98de108d2db.png);
+    background-image: url(./back.jpg);
     background-size: cover;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     z-index: -1;
